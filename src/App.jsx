@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
 
-
-
 import NavBar from './NavBar.jsx'
+import PuppyList from './PuppyList.jsx'
+import DeleteForm from './Delete.jsx'
+import SubmitForm from './Submit.jsx'
 const  App = () => {
   
 
@@ -14,9 +15,9 @@ const  App = () => {
 
       <Routes>
         <Route path='/' element={<h2>Welcome</h2>} />
-        <Route path='/puppies' element={<h2>Puppy List</h2>} />
-        <Route path= '/submit' element={<h2>Submit Puppy Form</h2>} />
-        <Route path= '/delete' element={<h2>Delete Puppy</h2>} />
+        <Route path='/puppies' element={<PuppyList />} />
+        <Route path= '/submit' element={<SubmitForm />} />
+        <Route path= '/delete' element={<DeleteForm />} />
       </Routes>
     </>
   )
